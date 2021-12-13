@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #202020;
 }
@@ -14,7 +18,7 @@ body {
 .heading1 {
     display: flex;
     justify-content: center;
-    color: rgb(255, 83, 83);
+    color: #fff;
     font-size: 2em;
     font-weight: 900;
     float: left;
@@ -23,6 +27,12 @@ body {
 
 .heading1 img {
     padding: 0.7rem;
+    transition: 0.2s;
+}
+
+.heading1 img:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
 }
 
 .navbar {
@@ -52,6 +62,26 @@ body {
 
 .ul li a:hover {
     color: #fff;
-    font-size: 1.5rem;
     transition: 0.2s;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 2em;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.footer a:hover {
+    color: rgb(255, 83, 83);
+    transition: 0.2s;
+    transform: scale(1.3);
 }
