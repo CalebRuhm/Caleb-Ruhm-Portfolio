@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202020;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.ul li {
+    padding: 1rem;
+    list-style: none;
+}
+
+.ul li a {
+    color: rgb(255, 83, 83);
+    text-decoration: none;
+    font-size: 1.4em;
+    transition: 0.2s;
+}
+
+.ul li a:hover {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
