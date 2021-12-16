@@ -89,7 +89,7 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     display: flex;
     bottom: 0;
     width: 100%;
@@ -133,5 +133,9 @@ body {
     margin: 0.8em;
     margin-left: auto;
     font-style: italic;
+    color: #fff;
+}
+
+p {
     color: #fff;
 }
