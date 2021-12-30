@@ -2,10 +2,12 @@
   const contact = document.querySelector("#contact");
   const close = document.querySelector("#button");
 
+  console.log(contact);
+
   const form = document.querySelector(".form")
-  const nameInput = document.querySelector("#name");
-  const email = document.querySelector("#email");
-  const message = document.querySelector("#message");
+  const nameInput = document.querySelector("#entry\\.244138998");
+  const email = document.querySelector("#entry\\.1893553492");
+  const message = document.querySelector("#entry\\.304084745");
   const success = document.querySelector("#success");
   const errorNodes = document.querySelectorAll(".error");
   const submit = document.querySelector(".center");
