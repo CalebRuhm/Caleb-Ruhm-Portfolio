@@ -2,8 +2,6 @@
   const contact = document.querySelector("#contact");
   const close = document.querySelector("#button");
 
-  console.log(contact);
-
   const form = document.querySelector(".form")
   const nameInput = document.querySelector("#name");
   const email = document.querySelector("#email");
