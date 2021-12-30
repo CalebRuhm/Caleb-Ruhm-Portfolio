@@ -14,6 +14,7 @@
 // Opens and closes contact page.
   contact.addEventListener("click", () => {
     form.classList.remove("hidden");
+    form.classList.add("fade-in");
   })
 
   close.addEventListener("click", () => {
