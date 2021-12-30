@@ -32,20 +32,20 @@
     </div>
 
     <div class="form hidden" >
-        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdu19E0r5lQXMOCZML9Rz0Gl8eCEO8DfmKIOYyU8cpx2Y-acQ/formResponse?" onsubmit="event.preventDefault();">
+        <form id="form" name="contactForm" method="POST" data-netlify="true" onsubmit="event.preventDefault();">
             <h1>Contact Caleb</h1>
             <button id="button" type="button">&#10006</button>
 
             <label for="name">Full Name:</label>
-            <input type="text" name="entry.244138998" id="entry.244138998" placeholder="Your name">
+            <input type="text" name="name" id="name" placeholder="Your name">
             <small class="error"></small>
             
             <label for="email">Email:</label>
-            <input type="email" name="entry.1893553492" id="entry.1893553492" placeholder="Your email">
+            <input type="email" name="email" id="email" placeholder="Your email">
             <small class="error"></small>
 
             <label for="message">Message:</label>
-            <textarea id="entry.304084745" name="entry.304084745" placeholder="Your message" rows="6"></textarea>
+            <textarea id="message" name="message" placeholder="Your message" rows="6"></textarea>
             <small class="error"></small>
 
             <div class="center">
@@ -53,7 +53,6 @@
                 <p id="success"></p>
             </div>
         </form>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
     </div>
 
     <footer class="footer">

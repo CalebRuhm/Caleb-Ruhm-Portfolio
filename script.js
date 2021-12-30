@@ -5,9 +5,9 @@
   console.log(contact);
 
   const form = document.querySelector(".form")
-  const nameInput = document.querySelector("#entry\\.244138998");
-  const email = document.querySelector("#entry\\.1893553492");
-  const message = document.querySelector("#entry\\.304084745");
+  const nameInput = document.querySelector("#name");
+  const email = document.querySelector("#email");
+  const message = document.querySelector("#message");
   const success = document.querySelector("#success");
   const errorNodes = document.querySelectorAll(".error");
   const submit = document.querySelector(".center");
@@ -71,5 +71,19 @@
     return symbols.test(email);
   }
 
+  // Submits Form
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('form');
+  let formData = new FormData(myForm)
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+}
+
+form.addEventListener("submit", handleSubmit);
 
 })();
