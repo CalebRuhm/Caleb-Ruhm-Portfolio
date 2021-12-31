@@ -2,6 +2,7 @@
   const contact = document.querySelector("#contact");
   const close = document.querySelector("#button");
   const form = document.querySelector(".form")
+  const navBar = document.querySelector(".navcontainer");
 
   const nameInput = document.querySelector("#name");
   const email = document.querySelector("#email");
@@ -13,13 +14,13 @@
 // Opens and closes contact page.
   contact.addEventListener("click", () => {
     form.classList.remove("hidden");
-
     form.classList.add("fade-in");
+    navBar.classList.add("hidden");
   })
 
   close.addEventListener("click", () => {
     form.classList.add("hidden");
-
+    navBar.classList.remove("hidden");
   })
 
   // Checks if inputs are filled out.
