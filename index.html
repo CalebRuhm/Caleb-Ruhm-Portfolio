@@ -6,6 +6,8 @@
     <title>Caleb Ruhm - Home</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="particles.js" defer></script>
+    <script src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/4cf78acc70.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,9 +16,8 @@
     <div class="navcontainer">
         <div class="heading1">
             <a href="index.html">
-                <img src="img/Lil Peep.png" alt="Lil peep logo" width="75px" title="Lil peep logo">
+                <img src="img/Lil Peep.png" alt="Home" width="75px" title="Lil peep logo">
             </a>
-            <h1>Caleb Ruhm</h1>
         </div>
         <div class="navbar">
             <ul class="ul">
@@ -27,24 +28,36 @@
         </div>
     </div>
 
-    <div>
-        <p>To do: <br> 1). Add home page interactive background with my logo. <br> 2). Contact page splash screen. Integrate with JS. <br> 3). About me page with brief prompt, skills, and photo of me. <br> 4). Interactive demo through my work. HTML / CSS / JS / GRAPHIC DESIGN / PHOTOS </p>
+    <div class="intro" id="particles-js">
+
     </div>
 
-    <div class="form hidden" >
+    <div class="form hidden">
         <form id="form" name="contactForm" method="POST" data-netlify="true" onsubmit="event.preventDefault();">
-            <h1>Contact Caleb</h1>
+            <div class="form-top">
+                <img src="img/calebhike.jpg" alt="caleb portrait">
+                <h1>Contact Me</h1>
+            </div>
             <button id="button" type="button">&#10006</button>
-
-            <label for="name">Full Name:</label>
+            
+            <div class="form-icon">
+                <i class="fas fa-user-circle"></i>
+                <label for="name">Full Name:</label>
+            </div>
             <input type="text" name="name" id="name" placeholder="Your name">
             <small class="error"></small>
-            
-            <label for="email">Email:</label>
+
+            <div class="form-icon">
+                <i class="fas fa-envelope"></i>
+                <label  for="email">Email:</label>
+            </div>
             <input type="email" name="email" id="email" placeholder="Your email">
             <small class="error"></small>
 
-            <label for="message">Message:</label>
+            <div class="form-icon">
+                <i class="fas fa-comment-alt"></i>
+                <label for="message">Message:</label>
+            </div>
             <textarea id="message" name="message" placeholder="Your message" rows="6"></textarea>
             <small class="error"></small>
 
@@ -52,6 +65,7 @@
                 <input type="submit" name="submit" value="Send Message">
                 <p id="success"></p>
             </div>
+
         </form>
     </div>
 

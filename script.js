@@ -1,8 +1,8 @@
 (function () {
   const contact = document.querySelector("#contact");
   const close = document.querySelector("#button");
-
   const form = document.querySelector(".form")
+
   const nameInput = document.querySelector("#name");
   const email = document.querySelector("#email");
   const message = document.querySelector("#message");
@@ -10,15 +10,16 @@
   const errorNodes = document.querySelectorAll(".error");
   const submit = document.querySelector(".center");
 
-
 // Opens and closes contact page.
   contact.addEventListener("click", () => {
     form.classList.remove("hidden");
+
     form.classList.add("fade-in");
   })
 
   close.addEventListener("click", () => {
     form.classList.add("hidden");
+
   })
 
   // Checks if inputs are filled out.
@@ -48,7 +49,6 @@
     if(!errorFlag) {
       success.innerHTML =`Thank you!`;
     }
-
 
   })
 

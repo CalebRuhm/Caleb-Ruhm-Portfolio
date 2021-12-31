@@ -14,20 +14,22 @@ html {
 
 body {
     background-color: #121212;
+}
 
+#particles-js {
+    width: 100%;
+    height: 100vh;
 }
 
 .navcontainer {
-    background-color: #121212;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
 }
 
 .heading1 {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    font-size: 2em;
-    font-weight: 900;
     margin-right: auto;
     padding: 0.5rem;
 }
@@ -110,17 +112,21 @@ body {
     transform: scaleX(1);
 }
 
+.intro {
+    color: #fff;
+}
+
 .form {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: url(img/blob-scene-haikei.svg);
+    /* background: url(/img/memphis.svg); */
+    background-color: #121212;
     background-position: center;
     background-size: cover;
-    z-index: 200;
-    color: #fff;
+    /* z-index: 200; */
 }
 
 form {
@@ -133,6 +139,24 @@ form {
     border-radius: 5px;
 }
 
+.form-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-top h1 {
+    transform: translate(-50px);
+}
+
+.form-top img {    
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: drop-shadow(5px 2px 3px #121212);
+    transform: translate(-175%, -80%) scale(2);
+}
 
 .form #button {
     position: absolute;
@@ -141,15 +165,37 @@ form {
     border: none;
     background: none;
     font-size: 2.4em;
-    color: transparent;
-    background-color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: #fff;
     cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.form #button:hover {
+    transform: scale(1.2) rotate(90deg);
+    animation: colorFade 5s ease infinite;
+}
+
+@keyframes colorFade {
+    0% {
+        color: #ffaf5f;
+    }
+    25% {
+        color: #4acfac;
+    }
+    50% {
+        color: #ffa48e;
+    }
+    75% {
+        color: #36c7d0;
+    }
+    100% {
+        color: #ffaf5f;
+    }
 }
 
 .form h1 {
-    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
 }
 
 .form label {
@@ -204,6 +250,29 @@ form {
     cursor: pointer;
 }
 
+.form-icon {
+   display: flex;
+   align-items: center;
+}
+
+.fas {
+    padding-right: 10px;
+    font-size: 1.5em;
+}
+
+.fa-user-circle {
+    color: #7e8ce0;
+}
+
+.fa-envelope {
+    color: #ffaf5f;
+}
+
+.fa-comment-alt {
+    color: #4acfac;
+}
+
+
 .error {
     color: red;
 }
@@ -221,7 +290,6 @@ form {
     display: flex;
     bottom: 0;
     width: 100%;
-    background-color: #282828;
     align-items: center;
 }
 
@@ -263,13 +331,10 @@ form {
     color: #fff;
 }
 
-p {
-    color: #fff;
-}
-
 .hidden {
     display: none;
 }
+
 
 @keyframes fadeIn {
     to {
