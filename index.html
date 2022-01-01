@@ -50,8 +50,42 @@
         <h1>My Work</h1>
     </div>
 
-    <div class="photos">
+    <div class="carousel">
         <h1>Photos</h1>
+        <div class="container">
+            <button class="prev">&#10094;</button>
+            <button class="forward">&#10095;</button>
+
+            <div class="photo-container">
+              <img src="/photos/2.jpg" style="width:100%">
+              <p>Birch Trees - Adirondacks NY</p>
+            </div>
+          
+            <div class="photo-container hidden">
+              <img src="/photos/5.jpg" style="width:100%">
+              <p>Birch Trees - Adirondacks NY</p>
+            </div>
+          
+            <div class="photo-container hidden">
+              <img src="/photos/6.jpg" style="width:100%">
+              <p>Birch Trees - Adirondacks NY</p>
+            </div>
+
+            <div class="photo-container hidden">
+              <img src="/photos/8.jpg" style="width:100%">
+              <p>Birch Trees - Adirondacks NY</p>
+            </div>
+
+            <div class="photo-container hidden">
+              <img src="/photos/10.jpg" style="width:100%">
+              <p>Birch Trees - Adirondacks NY</p>
+            </div>
+
+            <div class="photo-container hidden">
+              <img src="/photos/11.jpg" style="width:100%">
+              <p>Birch Trees - Adirondacks NY</p>
+            </div>
+        </div>
     </div>
 
     <div class="form hidden">
@@ -64,23 +98,23 @@
             
             <div class="form-icon">
                 <i class="fas fa-user-circle"></i>
-                <label for="name">Full Name:</label>
+                <label for="name">Name:</label>
             </div>
-            <input type="text" name="name" id="name" placeholder="Your name">
+            <input type="text" name="name" id="name" placeholder="Caleb ">
             <small class="error"></small>
 
             <div class="form-icon">
                 <i class="fas fa-envelope"></i>
                 <label  for="email">Email:</label>
             </div>
-            <input type="email" name="email" id="email" placeholder="Your email">
+            <input type="email" name="email" id="email" placeholder="name@email.com">
             <small class="error"></small>
 
             <div class="form-icon">
                 <i class="fas fa-comment-alt"></i>
                 <label for="message">Message:</label>
             </div>
-            <textarea id="message" name="message" placeholder="Your message" rows="6"></textarea>
+            <textarea id="message" name="message" placeholder="Hello World!" rows="6"></textarea>
             <small class="error"></small>
 
             <div class="center">

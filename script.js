@@ -86,4 +86,6 @@ const handleSubmit = (e) => {
 
 form.addEventListener("submit", handleSubmit);
 
+// Photo Carousel
+
 })();
