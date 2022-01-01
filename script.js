@@ -1,4 +1,6 @@
 (function () {
+
+  // Form Variables
   const contact = document.querySelector("#contact");
   const close = document.querySelector("#button");
   const form = document.querySelector(".form")
@@ -86,6 +88,11 @@ const handleSubmit = (e) => {
 
 form.addEventListener("submit", handleSubmit);
 
+
+
 // Photo Carousel
+ const photos = document.querySelectorAll(".photo-container");
+ const forward = document.querySelector(".forward");
+ const prev = document.querySelector(".prev");
 
 })();
