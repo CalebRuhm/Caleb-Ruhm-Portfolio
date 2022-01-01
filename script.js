@@ -85,10 +85,7 @@ const handleSubmit = (e) => {
   }).then(() => console.log('Form successfully submitted')).catch((error) =>
     alert(error))
 }
-
 form.addEventListener("submit", handleSubmit);
-
-
 
 // Photo Carousel
  const photos = document.querySelectorAll(".photo-container");
