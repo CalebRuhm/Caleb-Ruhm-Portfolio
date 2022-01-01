@@ -229,6 +229,7 @@ body {
 .photo-container img {
     filter: grayscale(1);
     transition: 0.3s ease;
+    max-width: 1000px;
 }
 
 .photo-container img:hover {

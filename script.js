@@ -92,4 +92,6 @@ form.addEventListener("submit", handleSubmit);
  const forward = document.querySelector(".forward");
  const prev = document.querySelector(".prev");
 
+
+
 })();
