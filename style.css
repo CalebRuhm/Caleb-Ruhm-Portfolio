@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    cursor: none;
 }
 
 body::-webkit-scrollbar {
@@ -25,6 +26,67 @@ html {
 body {
     background-color: #121212;
     overflow: auto;
+}
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+    mix-blend-mode: difference;
+    animation: cursorAnim 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    } 
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+.cursorClick {
+    animation: cursorClick 0.5s forwards;
+    border: 1px solid #fff;
+}
+
+@keyframes cursorClick {
+    0% {
+        transform: scale(1);
+    } 50% {
+        transform: scale(2);
+    } 100% {
+        transform: scale(1);
+    }
+}
+
+.cursorClick:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    animation: cursorClick2 0.2s forwards;
+}
+
+@keyframes cursorClick2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
 
 #particles-js {
@@ -318,6 +380,7 @@ form {
     color: #fff;
     cursor: pointer;
     transition: 0.2s ease;
+    cursor: none;
 }
 
 .form #button:hover {
@@ -398,7 +461,7 @@ form {
     border: none;
     background-color: #7e8ce0;
     color: #fff;
-    cursor: pointer;
+    cursor: none;
 }
 
 .form-icon {

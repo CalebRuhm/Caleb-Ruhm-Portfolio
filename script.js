@@ -1,5 +1,19 @@
 (function () {
 
+  // Cursor 
+  const cursor = document.querySelector(".cursor");
+  document.addEventListener("mousemove", (event) => {
+    cursor.setAttribute("style","top: "+(event.clientY - 10)+"px; left: "+(event.clientX - 10)+"px")
+  })
+
+  document.addEventListener("click", () => {
+    cursor.classList.add("cursorClick")
+    
+    setTimeout(() => {
+      cursor.classList.remove("cursorClick")
+    }, 500);
+  })
+
   // Form Variables
   const contact = document.querySelector("#contact");
   const close = document.querySelector("#button");
