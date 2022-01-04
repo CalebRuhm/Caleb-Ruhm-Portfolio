@@ -222,6 +222,7 @@ body {
 .card-right h2 {
     font-size: 4em;
     font-family: 'Staatliches',sans-serif;
+    letter-spacing: 2;
 }
 
 .card-right p {
@@ -274,7 +275,14 @@ body {
     height: auto;
     border: 15px solid #fff;
     border-bottom: 60px solid #fff;
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0px rgba(255, 255, 255, 0.3),
+    20px 20px 0px rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+}
+
+.about-left img:hover {
+    box-shadow: -10px -10px 0px rgba(255, 255, 255, 0.3),
+    10px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .about-left p {
@@ -298,8 +306,7 @@ body {
 .about-right p {
     color: #fff;
     margin: 0px 10px;
-    /* font-weight: bold; */
-    letter-spacing: 1.5;
+    letter-spacing: 2;
     padding: 10px;
 }
 
@@ -331,6 +338,7 @@ body {
     height: 100%;
     background: rgba( 255, 255, 255, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
