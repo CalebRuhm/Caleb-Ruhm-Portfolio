@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:700);
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 
 * {
     margin: 0;
@@ -269,8 +270,20 @@ body {
 }
 
 .about-left img {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: auto;
+    border: 15px solid #fff;
+    border-bottom: 60px solid #fff;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-left p {
+    position: relative;
+    width: 100%;
+    top: -40px;
+    color: #121212;
+    font-size: 1.2em;
+    font-family: 'Nothing You Could Do', cursive;
 }
 
 .about-right {
@@ -280,6 +293,66 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.about-right p {
+    color: #fff;
+    margin: 0px 10px;
+    /* font-weight: bold; */
+    letter-spacing: 1.5;
+    padding: 10px;
+}
+
+.skills {
+    margin: 10px;
+}
+
+.skills a {
+    text-decoration: none;
+    transition: 0.3s ease;
+    padding: 5px;
+}
+
+.skills a img {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
+.skills a img:hover {
+    transform: scale(1.5);
+    transition: 0.3s ease;
+}
+
+.about-table {
+    text-align: left;
+    margin: 20px;
+    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.about-table td, .about-table th {
+    margin: 20px;
+    padding: 15px 10px;
+    font-size: 1em;
+    color: #000
+}
+
+.about-links a {
+    margin: 0px 5px;
+    padding: 10px;
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.about-links a:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
 }
 
 .portfolio {
